@@ -1,0 +1,251 @@
+body {
+  margin: 0; 
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(to right,#31708E,#5085A5);
+  padding-left: 10px;
+}
+header ul {
+  float: right;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  padding-left: 50%;
+}
+header li {
+  display: inline-block;
+  padding: 15px;
+  padding-top: 15px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color:#8FC1E3;
+  padding: 50px 15px;
+}
+.heroContent {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #F7F9FB;
+  text-align: center;
+  box-shadow: 10px 10px 2px 1px #cacaca;
+  border-radius: 25px;
+  border: 1px solid #aaaaaa;
+}
+/*-----------------------------------------------------------------------*/
+.mySkills {
+  background-color: #8FC1E3;
+  padding: 50px 15px;
+}
+.skillsContent {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #F7F9FB;
+  box-shadow: 10px 10px 2px 1px #cacaca;
+  border-radius: 25px;
+  border: 1px solid #aaaaaa;
+}
+
+.skillsRow{
+  display: flex;
+}
+
+.skillsColumn {
+  text-align: center;
+  width: 33.33%;
+  padding: 35px;
+  grid-area: mySkill;
+}
+.pB {
+  text-align: left;
+}
+#uR{
+  grid-area: uR;
+}
+#uE{
+  grid-area: uE;
+}
+#uI{
+  grid-area: uI;
+}
+
+/*-----------------------------------------------------------------------------*/
+.myWork {
+  background-color: #8FC1E3;
+  padding: 50px 15px;
+}
+.workContent {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #F7F9FB;
+  box-shadow: 10px 10px 2px 1px #cacaca;
+  border-radius: 25px;
+  border: 1px solid #aaaaaa;
+}
+.cityGrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 25px;
+}
+.cityImage{
+  text-align: left;
+}
+.cityBody {
+  text-align: left;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+.cplcGrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 25px;
+}
+.cplcBody {
+  text-align: left;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+.cplcImage{
+  text-align: left;
+}
+.expndGrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 25px;
+}
+.expndBody {
+  text-align: left;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+.expndImage{
+  text-align: left;
+}
+/*--------------------------------------------------------------------*/
+.aModal{
+  background-color: #8FC1E3;
+  padding: 50px 15px;
+}
+.topModal {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #F7F9FB;
+  box-shadow: 10px 10px 2px 1px #cacaca;
+  border-radius: 25px;
+  border: 1px solid #aaaaaa;
+}
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content{
+  margin: auto;
+  padding: 10px;
+  width: 75%;
+  text-align: center;
+  background-color: #F7F9FB;
+  border-radius: 25px;
+  border: 1px solid #aaaaaa;
+}
+.close{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contactModal{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------------------------------------------------------*/
+button {
+  margin: auto;
+  padding: 10px;
+  background-color: #6B7864;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #6B7864;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+h1 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600){
+  #skillsGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas:
+    "uR"
+    "uE"
+    "uI" ;
+    
+  }
+
+}
+
+
+.headerFonts{
+  font-family: 'Montserrat', sans-serif;
+}
+.secondHeader{
+  font-family: 'Quicksand', sans-serif;
+}
+.bodyFont{
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif; */
